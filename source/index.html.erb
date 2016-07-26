@@ -1,0 +1,50 @@
+---
+title: "Nested Grids"
+---
+<title><%=current_page.data.title%></title> 
+<%=stylesheet_link_tag :site %>
+<div class="container">
+<h1>The 10 column complex nested grid AG test</h1>
+
+<div class="ag1">
+  <h2>AG 1</h2>
+</div>
+<!-- ag1 ends here-->
+
+<!-- ag4 to ag7 are nested within ag2.-->
+<div class="ag2">
+  <h2><a href="responsive.html">Responsive layout</a></h2>
+  <div class="ag4">
+    <h2>AG 4</h2>
+  </div>
+  <div class="ag5">
+    <h2>AG 5</h2>
+  </div>
+  <div class="ag6">
+    <h2>AG 6</h2>
+  </div>
+
+  <!-- ag8, ag9 and ag10 are nested within ag7 -->
+  <div class="ag7">
+    <h2>AG 7</h2>
+    <div class="ag8">
+      <h2>AG 8</h2>
+    </div>
+    <div class="ag9">
+      <h2>AG 9</h2>
+    </div>
+    <div class="ag10">
+      <h2>AG 10</h2>
+    </div>
+  </div>
+  <!-- ag7 ends here -->
+</div>
+<!-- ag2 ends here-->
+
+<div class="ag3">
+  <h2>AG 3</h2>
+</div>
+<!-- ag3 ends here -->
+
+</div>
+<!-- container ends here -->

@@ -1,0 +1,66 @@
+@import "normalize";
+@import "susy";
+
+$susy:(
+	columns:12,
+	gutter-position:split
+	);
+//mobile first
+.container{
+	@include span(full);
+	background:#FCEDCF;
+}
+a{
+	color:grey;
+	text-decoration:none;
+}
+*{
+	border-radius:5px;
+}
+.ag1,.ag2,.ag3{
+ //margin:gutter(48);
+}
+.ag1,.ag3{
+	background:#68DAD3;
+}
+.ag2{
+	background:#FCE6BA;
+}
+
+h2{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: normal;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+}
+// for tablet
+@include susy-breakpoint(600px,12){
+
+	.ag1{
+		@include span(4 last);
+	}    
+	.ag3{
+		@include span(4 last);
+	}
+	.ag2{
+		@include span(8 first); 
+	}    
+}
+
+
+//for desktop
+@include susy-breakpoint(900px,12){
+
+	.ag1{
+		@include span(3);
+	}    
+	.ag3{
+		@include span(3);
+	}
+	.ag2{
+		@include span(6); 
+	}    
+}
+
+
