@@ -1,10 +1,11 @@
 @import "normalize";
 @import "susy";
-
+@import "header";
 $susy:(
 	columns:12,
 	gutter-position:split
 	);
+
 //mobile first
 .container{
 	@include span(full);

@@ -14,4 +14,3 @@ gem 'middleman-livereload'
 gem 'middleman-compass', '>= 4.0.0'
 gem 'susy','2.2.12'
 gem "middleman-minify-html"
-gem 'middleman-syntax', '~> 2.1'
